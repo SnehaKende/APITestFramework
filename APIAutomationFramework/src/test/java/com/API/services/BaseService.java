@@ -1,5 +1,7 @@
 package com.API.services;
 
+import com.API.models.request.LoginRequest;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -16,7 +18,7 @@ public class BaseService {
 	           
 	    }
 	    
-	    protected Response postRequest(String payLoad, String endPoint) {
-	    	return requestSpec.contentType(ContentType.JSON).body(payLoad).post(endPoint);
+	    protected Response postRequest(Object loginReq, String endPoint) {
+	    	return requestSpec.contentType(ContentType.JSON).body(loginReq).post(endPoint);
 	    }
 }
