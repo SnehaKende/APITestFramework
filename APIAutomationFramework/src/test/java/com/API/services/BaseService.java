@@ -14,8 +14,7 @@ public class BaseService {
 
 	    public BaseService() {
 	        this.requestSpec = RestAssured.given()
-	            .baseUri(BASE_URI);
-	           
+	            .baseUri(BASE_URI);          
 	    }
 	    
 	    protected Response postRequest(Object loginReq, String endPoint) {

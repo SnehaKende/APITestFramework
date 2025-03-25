@@ -18,7 +18,9 @@ public class LoginResponse {
 		this.roles = roles;
 	}
 	
-	
+	public LoginResponse() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getToken() {
 		return token;
 	}
