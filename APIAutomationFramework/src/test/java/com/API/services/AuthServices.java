@@ -8,6 +8,7 @@ public class AuthServices extends BaseService{
 	
 	private static final String AUTH_PATH = "/api/auth/";
 
+	
 	public Response Login(LoginRequest loginReq) {
 	
 		return postRequest(loginReq, AUTH_PATH + "/login");	
